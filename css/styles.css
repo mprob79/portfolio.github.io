@@ -1,0 +1,126 @@
+/* 
+Name: Michael Roberts
+Current Date: 02/27/2024
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2 {
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+}
+
+/* Style rules for images */
+img {
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+
+/* Style rules for mobile viewport */
+    /* Mobile Friendly Nav Bar */
+        nav ul {
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        nav ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    font-size: 3em;
+    color: #323275;
+}
+
+header h1 {
+    font-style: italic;
+    font-family: 'Francois One', sans-serif;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #7c5348;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 2em;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    overflow: auto;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main ul {
+    font-weight: bold;
+    list-style-type: none;
+}
+
+
+
+#contact {
+    text-align: center;
+
+}
+#contact a {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map {
+    border: 5px solid #373684;
+}
+
+/* Style rules for footer content */
+footer {
+    
+    text-align: center;
+    font-size: 1.5em;
+    clear: left;
+    font-weight: bold;
+}
+
+footer a {
+    
+    color: #4645a8;
+    text-decoration: none;
+}
