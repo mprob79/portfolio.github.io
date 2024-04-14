@@ -1,33 +1,99 @@
 /* 
-Name: Michael Roberts
-Current Date: 3/26/2024
-File Name: styles.css
+    Name: Michael Roberts
+    File Name: styles.css
+    Current Date: 04/04/2024
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h2 {
+body, header, nav, main, footer, img, h1, h2, aside, figure, figcaption {
     margin: 0; 
     padding: 0; 
     border: 0;
 }
 
-/* Style rules for images */
+/* Style rule for images */
 img {
     display: block;
     margin: auto;
-    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
 }
 
-/* Style rules for header content */
+
+/* Style rule for mobile viewport */
+
+    /* Style rule for aside element within mobile viewport */
+    aside {
+        text-align: relative;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #373684;
+    }   
+    /* Style rule for the figure element within the mobile viewport */
+    figure {
+        position: relative;
+        max-width: 300px;
+        margin: 2% auto;
+    }
+
+    /* Style rule for the figcaption element within the mobile viewport */
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        width: 100%;
+        padding: 5% 0;
+        text-align: center;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color: #7c5348;
+    }
+
+
+    /* Mobile Friendly Nav Bar */
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    /* Hide tab-desk class */
+    .tab-desk {
+        display: none;
+    }
+    
+    /* Round class for images */
+    .round {
+        border-radius: 8px;
+    }
+
+/* Style rule for header content */
 header {
     text-align: center;
-    font-size: 3em;
+    font-size: 1.5em;
     color: #323275;
 }
 
 header h1 {
+    font-family: 'DM Serif Display', serif;
     font-style: italic;
-    font-family: 'Francois One', sans-serif;
 }
 
 /* Style rules for navigation area */
@@ -57,8 +123,9 @@ nav li a {
 /* Style rules for main content */
 main {
     padding: 2%;
+    background-color: #e5e9fc;
     overflow: auto;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 main p {
@@ -70,25 +137,40 @@ main ul {
     list-style-type: none;
 }
 
-
-
+/* Style rules for contact page elements */
 #contact {
     text-align: center;
 
 }
-#contact a {
+#contact .email-link {
     color: #4645a8;
     text-decoration: none;
     font-weight: bold;
 }
 
+.tel-link {
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
 .map {
     border: 5px solid #373684;
+    width: 95%;
+    height: 50%;
 }
 
 /* Style rules for footer content */
 footer {
-    
     text-align: center;
     font-size: 1.5em;
     clear: left;
@@ -96,7 +178,127 @@ footer {
 }
 
 footer a {
-    
     color: #4645a8;
     text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+    
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rule for header content */
+    span.tab-desk {
+        display: inline;
+    }
+    
+    /* Tablet Viewport: Style rule for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.5em;            
+        border-right: 1px solid #e5e9fc;
+    }
+    nav li:last-child {
+        border-right: none;
+    }
+    nav li {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }   
+    
+    /* Tablet Viewport: Style rule for map */
+    .map {
+        width: 500px;
+        height: 450px;
+    }
+    
+    /* Tablet Viewport: Style rule for grid */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+    
+    /* Tablet Viewport: Style rule for aside element */
+    aside {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+    body {
+        font-size: 16px;      
+    }
+    
+    /* Style rule for header */
+    header {
+        padding: 2%;
+    }
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    nav li:hover {
+            color: #373684;
+            background-color: #e5e9fc;
+    }
+    
+    /* Desktop Viewport: Style Rules for main content */  
+    #info ul {
+        margin-left: 5%;
+    }
+    
+    main h3 {
+        font-size: 1.5em;
+    }
+    
+    #rental, #cnc-mill, #marketing, #sales, #it-support {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+    
+    /* Desktop Viewport: Style Rules for grid */  
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Desktop Viewport: Style Rules for figcaption */  
+    figcaption {
+        font-size: 1em;
+    }
+    
+    /* Desktop Viewport: Style Rules for aside */
+    aside {
+        grid-column: 1 / span 4;
+    }
+
+    /* Style rules for main content */
+    #info ul {
+        margin-left: 5%;
+    }
+    main h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Media Query for print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
 }

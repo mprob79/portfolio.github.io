@@ -2,19 +2,23 @@
 <!--
     Name: Michael Roberts
     File Name: experience.html
-    Date: 3/26/2024
+    Current Date: 04/12/2024
 -->
 <html lang="en">
 <head>
+	<title>Experience</title>
+	<meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
-	<title>Template</title>
-	<meta charhref="https://fonts.googleapis.com/css2?family=Francois+One&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:400i|Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
-        <h1>&#9755; Michael Roberts &#9754;</h1>
-        <img src="images/img01_me.jpg" alt="selfie of me">
+        <span class="tab-desk">&#9836;</span><h1>&#9755; Michael Roberts &#9754;</h1>
+        <figure><img src="images/img01_me.jpg" alt="selfie of me" class="round">
+        <figcaption>Hello World!</figcaption>
         <h2>&#9759; My Experience &#9759;</h2>
+        </figure>
     </header>
 
     <nav>
@@ -27,21 +31,37 @@
     </nav>
 
 <!-- Use the main area to add the main content to the webpage -->
-    <main> 
-        <div id="experience">
-            <p>The following are industries I have experience in:</p>
-                <ul>
-                    <li>Vehicle Rentals</li>
-                    <li>Digital Marketing</li>
-                    <li>CNC Tooling</li>
-                    <li>Sales</li>
-                    <li>IT Support</li>
-                </ul>
-        </div>
+    <main class="grid">
+            <aside>
+                <p>The following are industries I have experience in:</p>
+            </aside>
+            <figure>
+                <img src="images/rental.jpg" alt="vehicle rental">
+                <figcaption>Vehicle Rental</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="images/marketing.jpg" alt="digital marketing">
+                <figcaption>Digital Marketing</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="images/cnc-mill.jpg" alt="cnc mill">
+                <figcaption>CNC Programming</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="images/sales.jpg" alt="sales">
+                <figcaption>Sales</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="images/it-support.jpg" alt="it support">
+                <figcaption>IT Support</figcaption>
+            </figure>
     </main>
-
     <footer> 
-        <p>Email: <a href="mailto:roberts@student.lattc.edu">roberts@student.lattc.edu</a></p>      
+        <p>Email: <a href="mailto:robertmp4785@student.lattc.edu">robertmp4785@student.lattc.edu</a></p>      
     </footer>
 
 </body>
