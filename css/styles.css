@@ -199,6 +199,24 @@ footer a {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
+    body {
+        background-color: #b8aeae; /* Match desktop background color */
+    }
+    
+    /* Update color of aside element */
+    aside {
+        color: #323275; /* Match desktop text color */
+    }
+    
+    /* Update figcaption background color */
+    figcaption {
+        background-color: #e5e9fc; /* Match desktop background color */
+    }
+
+    /* Update color of nav links */
+    nav li a {
+        color: #bbbada; /* Match desktop text color */
+    }
     
     /* Tablet Viewport: Show tab-desk class, hide mobile class */
     .tab-desk {
