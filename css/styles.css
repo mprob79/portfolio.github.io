@@ -11,6 +11,21 @@ body, header, nav, main, footer, img, h1, h2, aside, figure, figcaption {
     border: 0;
 }
 
+/* Style rule for body */
+body {
+    background-color: black;
+}
+
+/* style rules for home page */
+#home {
+    text-align: center;
+}
+
+/* style rules for aside page */
+aside {
+    text-align: center;
+}
+
 /* Style rule for images */
 img {
     display: block;
@@ -27,7 +42,7 @@ img {
         text-align: relative;
         font-size: 1.5em;
         font-weight: bold;
-        color: #373684;
+        color: black;
     }   
     /* Style rule for the figure element within the mobile viewport */
     figure {
@@ -47,7 +62,7 @@ img {
         font-family: Verdana, Arial, sans-serif;
         font-size: 1.5em;
         font-weight: bold;
-        background-color: #7c5348;
+        background-color: #464545;
     }
 
 
@@ -58,7 +73,6 @@ img {
     }
 
     nav ul li {
-        display: block;
         margin-bottom: 10px;
     }
 
@@ -67,9 +81,9 @@ img {
     }
 
     nav ul li a {
-        display: inline-block;
+        display: inline-flex;
         padding: 10px 20px;
-        color: #fff;
+        color: #bbbaba;
         text-decoration: none;
         border-radius: 5px;
     }
@@ -98,7 +112,7 @@ header h1 {
 
 /* Style rules for navigation area */
 nav {
-    background-color: #7c5348;
+    background-color: #464545;
 }
 
 nav ul {
@@ -114,7 +128,7 @@ nav li {
 
 nav li a {
     display: block;
-    color: #fff;
+    color:#bbbada;
     text-align: center;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -123,7 +137,7 @@ nav li a {
 /* Style rules for main content */
 main {
     padding: 2%;
-    background-color: #e5e9fc;
+    background-color: #b8aeae;
     overflow: auto;
     font-family: 'Roboto', sans-serif;
 }
@@ -143,7 +157,7 @@ main ul {
 
 }
 #contact .email-link {
-    color: #4645a8;
+    color: #bbbada;
     text-decoration: none;
     font-weight: bold;
 }
@@ -175,10 +189,11 @@ footer {
     font-size: 1.5em;
     clear: left;
     font-weight: bold;
+
 }
 
 footer a {
-    color: #4645a8;
+    color: white;
     text-decoration: none;
 }
 
